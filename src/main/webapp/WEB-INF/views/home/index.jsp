@@ -12,6 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>${name}</h1>
+        <h1>Clients</h1>
+        <c:forEach var = "client" items = "${clients}">
+            <h2>${client.name}</h2>
+        </c:foreach>
     </body>
 </html>
